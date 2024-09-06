@@ -5,7 +5,8 @@ const notificationModel = require("../models/notification");
 const messagesModel = require("../models/messages");
 const connectionRequestModel = require("../models/connectionRequests");
 const commentsModel = require("../models/comments");
-
+const employerModel = require("../models/employers");
+const jobpostmodel = require("../models/job-posts")
 
 module.exports = async function (req, res, next){
     if(!req.cookies.token){

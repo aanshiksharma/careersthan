@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/icons/logo.svg" alt="">
+            <img src="/icons/logoName.svg" alt="">
+        </div>
+        <div class="nav">
+            <a href="#">Get the app</a>
+           <a href="/signup"><button class="join-btn">Join Now</button></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sign-in-box">
+            <h2>Get Started</h2>
+            <form action="/users/register" method="post">
+                <div class = "input-group">
+                <label for="name">Name</label>
+                    <input type="text" class="input" placeholder="Enter your name..." name="username">
+            </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email...">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter your password...">
+                </div>
+                <p>By clicking Agree and continue, you agree to careersthan’s <a href="#">Privacy Policy</a></p>
+                <button type="submit" class="sign-in-btn">Agree and continue</button>
+            </form>
+
+            <div class="alternative-signin">
+                <p>Or continue with</p>
+                <div class="icons">
+                    <a href=""><img src="/icons/Vector@2x.svg" alt="Windows"></a>
+                    <a href=""><img src="/icons/Vector.svg" alt="Google"></a>
+                    <a href=""><img src="/icons/Vector (1).svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <p class="signup-link">Already have an account? <a href="/signin">Sign In</a></p>
+        </div>
+        
+        <div class="illustration">
+            <img src="/icons/Ellipse 4.svg" class="ellipse-4" alt="">
+            <img src="/icons/Ellipse 5.svg" class="ellipse-5" alt="">
+            <img src="/icons/Ellipse 6.svg" class="ellipse-6" alt="">
+            <img src="/icons/Ellipse 7.svg" class="ellipse-7" alt="">
+            <img src="/icons/Ellipse 8.svg" class="ellipse-8" alt="">
+        </div>
+        
+    </div>
+</body>
+</html>

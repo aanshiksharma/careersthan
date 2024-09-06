@@ -1,11 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careersthan</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/stylesheets/feed.css" />
+
+    <!-- Javascript -->
+    <script src="/javascripts/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper-2">
+        <div class="left flex">
+          <div class="logo">
+            <img src= "/icons/logo.svg" alt="" />
+            <img src="/icons/logoName.svg" alt="careersthan" />
+          </div>
+
+          <!-- Searchbar -->
+          <form action="#" class="searchbar">
+            <input
+              type="text"
+              name="search"
+              id="searchBar"
+              placeholder="Search"
+            />
+            <button type="submit" class="btn">
+              <img src="/icons/searchIcon.svg" alt="" />
+            </button>
+          </form>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+          <ul class="navlist">
+            <li><a href="/views/feed.html">Home</a></li>
+            <li><a href="#">Network</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Messaging</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li>
+              <a href="#" class="flex" aria-selected="false">
+                <img src="/icons/profileLogo.svg" alt="" />
+                Profile
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper-1">
+      <div class="main">
+        <!-- Left Elements -->
+        <div class="left">
+          <!-- Profile -->
+          <div class="box profile">
+            <img src="/images/image.jpg" alt="" />
+            <!-- <div class="pfp">
+              <img src="/icons/profileLogo.svg" alt="" />
+            </div> -->
+          </div>
+
+          <!-- Groups -->
+          <div class="box groups">
+            <h2>Groups</h2>
+            <div class="group">
+              <h3><a href="#">AI Enthusiasts</a></h3>
+              <p>23 Active | 500 Members</p>
+            </div>
+            <div class="group">
+              <h3><a href="#">3D Artworks</a></h3>
+              <p>87 Active | 523 Members</p>
+            </div>
+            <div class="group">
+              <h3><a href="#">Coding Partners</a></h3>
+              <p>85 Active | 567 Members</p>
+            </div>
+            <div class="group">
+              <h3><a href="#">UI/UX Group</a></h3>
+              <p>54 Active | 784 Members</p>
+            </div>
+            <div class="group">
+              <h3><a href="#">UI Memes</a></h3>
+              <p>12 Active | 451 Members</p>
+            </div>
+
+            <!-- See All Button -->
+            <button type="button" class="btn">See all</button>
+          </div>
+
+          <div class="box events">
+            <h2>Events</h2>
+            <div class="event">
+              <h3><a href="#">Autodesk Maya Workshop</a></h3>
+              <p>15th Sept, 2024</p>
+            </div>
+            <div class="event">
+              <h3><a href="#">Blender Workshop</a></h3>
+              <p>18th Sept, 2024</p>
+            </div>
+            <!-- See All Button -->
+            <button type="button" class="btn">See all</button>
+          </div>
+        </div>
+
+        <!-- Middle Elements -->
+        <div class="mid">
+          <!-- Create Post -->
+          <div class="box flex createPost">
+            <img src="/icons/profileLogo.svg" alt="" />
+            <input
+              type="text"
+              name="createPostText"
+              id="createPostText"
+              placeholder="Start a Post..."
+            />
+            <div class="buttons">
+              <button type="button" class="btn">
+                <img src="/icons/camera.svg" alt="" />
+              </button>
+              <button type="button" class="btn">
+                <img src="/icons/attachment.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <!-- Stories -->
+          <div class="box flex stories">
+            <div class="userStory">
+              <button type="button" class="button">
+                <img src="/icons/story1.svg" alt="" />
+              </button>
+              You
+            </div>
+
+            <div class="userStory">
+              <button type="button" class="button">
+                <img src="/icons/story2.svg" alt="" />
+              </button>
+              Ajeet
+            </div>
+
+            <div class="userStory">
+              <button type="button" class="button">
+                <img src="/icons/story3.svg" alt="" />
+              </button>
+              Sambhav
+            </div>
+
+            <div class="userStory">
+              <button type="button" class="button">
+                <img src="/icons/story4.svg" alt="" />
+              </button>
+              Vaishnavi
+            </div>
+
+            <div class="userStory">
+              <button type="button" class="button">
+                <img src="/icons/story5.svg" alt="" />
+              </button>
+              Divyanshi
+            </div>
+
+            <div class="userStory">
+              <button type="button" class="button">
+                <img src="/icons/story6.svg" alt="" />
+              </button>
+              Srishti
+            </div>
+          </div>
+
+          <!-- Posts -->
+          <div class="posts">
+            <div class="box post">
+              <div class="userInfo">
+                <div class="pfp">
+                  <img src="/icons/story2.svg" alt="" />
+                </div>
+                <div class="info">
+                  <h4>Ajeet Kumar Bharti</h4>
+                  <p>3D Artist at NCS</p>
+                  <p>
+                    50m &bull;
+                    <img src="/icons/earthLittle.svg" alt="" />
+                  </p>
+                </div>
+              </div>
+
+              <div class="postText">
+                <div>
+                  I’m thrilled to share that I’m starting a new chapter as a
+                  Designer at Nibble Computer Society! 🎨💻
+                </div>
+                <div>
+                  I’m looking forward to collaborating with a talented team and
+                  contributing to innovative projects in the design space.
+                  Grateful for this opportunity and excited to continue growing
+                  my skills in this dynamic field.
+                </div>
+                <div>
+                  A big thank you to everyone who has supported me on this
+                  journey! 🙏
+                </div>
+              </div>
+
+              <div class="postMedia">
+                <img src="/images/postImage.svg" alt="" />
+              </div>
+
+              <div class="postInteractions">
+                <div class="flex">
+                  <button type="button" class="button">
+                    <img src="/icons/like.svg" alt="" /> Like
+                  </button>
+                  <button type="button" class="button">
+                    <img src="/icons/comment.svg" alt="" /> Comment
+                  </button>
+                  <button type="button" class="button">
+                    <img src="/icons/repost.svg" alt="" /> Repost
+                  </button>
+                </div>
+                <div>
+                  <button type="button" class="button">
+                    Share <img src="/icons/share.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Elements -->
+        <div class="right">
+          <!-- Jobs -->
+          <div class="box jobs">
+            <h2>Jobs for you</h2>
+            <!-- Job 1 -->
+            <div class="job flex">
+              <img src="/icons/job1.svg" alt="" />
+              <div class="description">
+                <h3><a href="#">Junior Graphics Designer</a></h3>
+                <p>NETFLIX</p>
+                <p>Noida &bull; ON-SITE</p>
+              </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="job flex">
+              <img src="/icons/job2.svg" alt="" />
+              <div class="description">
+                <h3><a href="#">Senior Graphics Designer</a></h3>
+                <p>GOOGLE</p>
+                <p>Noida &bull; ON-SITE</p>
+              </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="job flex">
+              <img src="/icons/job3.svg" alt="" />
+              <div class="description">
+                <h3><a href="#">Junior UX Designer</a></h3>
+                <p>Meta</p>
+                <p>Noida &bull; ON-SITE</p>
+              </div>
+            </div>
+
+            <!-- See All Button -->
+            <button type="button" class="btn">See all</button>
+          </div>
+
+          <!-- AI News -->
+          <div class="box aiNews">
+            <h2>AI News</h2>
+            <div class="news">
+              <h3><a href="#">Flipkart's new UX for Mobile Users</a></h3>
+              <p>4h ago | 6969 Readers</p>
+            </div>
+
+            <div class="news">
+              <h3><a href="#">Flipkart's new UX for Mobile Users</a></h3>
+              <p>4h ago | 6969 Readers</p>
+            </div>
+
+            <div class="news">
+              <h3><a href="#">Flipkart's new UX for Mobile Users</a></h3>
+              <p>4h ago | 6969 Readers</p>
+            </div>
+
+            <div class="news">
+              <h3><a href="#">Flipkart's new UX for Mobile Users</a></h3>
+              <p>4h ago | 6969 Readers</p>
+            </div>
+
+            <div class="news">
+              <h3><a href="#">Flipkart's new UX for Mobile Users</a></h3>
+              <p>4h ago | 6969 Readers</p>
+            </div>
+
+            <div class="news">
+              <h3><a href="#">Flipkart's new UX for Mobile Users</a></h3>
+              <p>4h ago | 6969 Readers</p>
+            </div>
+
+            <div class="news">
+              <h3><a href="#">Flipkart's new UX for Mobile Users</a></h3>
+              <p>4h ago | 6969 Readers</p>
+            </div>
+
+            <!-- See All Button -->
+            <button type="button" class="btn">See all</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
