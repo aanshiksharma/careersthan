@@ -1,0 +1,319 @@
+@forward "utils";
+@forward "wrappers";
+
+// Import is used for importing the variables from some file. ## '@forward' does not work here. ##
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  box-shadow: 2px 2px 10px $shadow;
+  font-size: 1.125rem;
+
+  .wrapper-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    padding-inline-end: 2em;
+  }
+
+  .left {
+    gap: 1.5em;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .searchbar {
+    border-radius: 6px;
+    background: $bg-1;
+    padding: 0.2em 0.6em;
+    font-size: 16px;
+
+    input {
+      min-width: 16em;
+    }
+  }
+
+  .navlist {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+
+    .flex {
+      gap: 0.5em;
+    }
+
+    li {
+      position: relative;
+
+      &:last-child a {
+        color: $cta;
+        border-color: $cta;
+
+        &:hover {
+          background: $bg-hover-1;
+        }
+      }
+    }
+
+    a {
+      border: 1.5px solid transparent;
+      border-radius: 12px;
+      padding: 0.4em 1em;
+
+      transition: 200ms ease;
+
+      &:hover {
+        border-color: $cta;
+        color: $cta;
+      }
+    }
+  }
+}
+
+main {
+  .main {
+    display: grid;
+    grid-template-areas: "left mid mid mid right";
+    gap: 1em;
+
+    padding-block: 2em;
+  }
+
+  .box {
+    padding: 1em;
+    border-radius: 20px;
+    border: 1.5px solid $border-1;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .btn {
+      border-radius: 12px;
+      border: 1px solid $cta;
+      color: $cta;
+      justify-self: center;
+      padding: 0.4em 1em;
+      font-size: 10px;
+      font-weight: 600;
+
+      &:hover {
+        background: $bg-hover-1;
+      }
+    }
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 240px;
+    grid-area: left;
+
+    .profile {
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+
+      & > img {
+        width: 100%;
+      }
+    }
+
+    .groups {
+      display: grid;
+      gap: 1em;
+    }
+
+    .events {
+      display: grid;
+      gap: 1em;
+    }
+  }
+
+  .mid {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    grid-area: mid;
+
+    .createPost {
+      gap: 1em;
+      border-color: $border-2;
+      font-size: 18px;
+
+      & > img {
+        width: 39px;
+      }
+
+      input {
+        // background: $test;
+        padding: 0.5em 0;
+        flex-grow: 1;
+
+        &::placeholder {
+          color: $text-1;
+          width: max-content;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        gap: 1em;
+
+        .btn {
+          border: 0;
+          background: transparent;
+        }
+      }
+    }
+
+    .stories {
+      gap: 1.5em;
+      padding-inline: 1.5em;
+
+      .userStory {
+        display: grid;
+        justify-items: center;
+        gap: 0.3em;
+
+        .button {
+          outline: 4px solid $cta;
+          outline-offset: 0;
+          border: 0;
+          border-radius: 50%;
+          width: 5.75rem;
+          height: 5.75rem;
+          overflow: hidden;
+          cursor: pointer;
+          font-size: 0.75rem;
+
+          transition: 200ms ease;
+
+          img {
+            transform: scale(1.05);
+          }
+
+          &:hover {
+            outline-offset: 3px;
+          }
+
+          &:first-child {
+            position: relative;
+
+            &::after {
+              content: "+";
+              display: block;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+
+    .posts {
+      .post {
+        display: grid;
+        gap: 1em;
+
+        .userInfo {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+
+          .pfp {
+            max-width: 4.6rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              transform: scale(1.05);
+            }
+          }
+          .info {
+            p {
+              font-size: 0.875rem;
+              color: $text-3;
+            }
+          }
+        }
+
+        .postMedia {
+          border-radius: 1rem;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.05);
+          }
+        }
+
+        .postInteractions {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-inline: 1em;
+
+          .flex {
+            flex-direction: row;
+            gap: 1.5em;
+          }
+
+          .button {
+            background: transparent;
+            outline: 0;
+            border: 0;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            color: $text-3;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 240px;
+    grid-area: right;
+
+    .jobs {
+      display: grid;
+      gap: 1em;
+
+      .job {
+        gap: 1em;
+      }
+    }
+
+    .aiNews {
+      display: grid;
+      gap: 1em;
+    }
+  }
+}
