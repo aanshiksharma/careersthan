@@ -77,29 +77,32 @@ input {
   header .navlist {
     display: flex;
     align-items: center;
-    gap: 2.75em;
+    gap: 0.75em;
   }
-
   header .navlist .flex {
     gap: 0.5em;
   }
-
   header .navlist li {
     position: relative;
   }
-
-  header .navlist a::after {
-    content: "";
-    position: absolute;
-    bottom: -1.6em;
-    left: 0;
-    height: 0;
-    width: 100%;
-    background: #31aea5;
+  header .navlist li:last-child a {
+    color: #ffffff;
+    border-color: #31aea5;
   }
-  header .navlist a:hover::after {
-    height: 6px;
+  header .navlist li:last-child a:hover {
+    background: #0a968d;
   }
+  header .navlist a {
+    border: 1.5px solid transparent;
+    border-radius: 12px;
+    padding: 0.4em 1em;
+    transition: 200ms ease;
+  }
+  header .navlist a:hover {
+    border-color: #31aea5;
+    color: #31aea5;
+  }
+  
   
   .ainame{
     position: relative;
@@ -107,8 +110,8 @@ input {
 
   .ailogo{
     position: absolute;
-    left: 153vh;
-    margin-bottom: 1.3vh;
+    right: 0;
+    top: 0;
   }
 
   .sign-in {
@@ -164,7 +167,6 @@ main .container{
 
 .signup-form {
     flex: 1;
-    background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     max-width: 400px;
@@ -226,11 +228,12 @@ main .container{
 
 .signup-form .social-login {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: 18px;
     margin-left: 10vh;
     width: 120%;
+    gap: 2vh;
 }
 
 .social-icon a{

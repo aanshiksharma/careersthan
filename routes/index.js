@@ -1,4 +1,5 @@
 const express = require("express");
+const isLoggedIn = require("../middlewares/isLoggedIn");
 const router = express.Router();
 require('../middlewares/isLoggedIn');
 
@@ -14,7 +15,7 @@ router.get('/signup', (req, res) => {
     res.render('signup')
 });
 
-router.get('/feed', (req, res)=> {
+router.get('/feed',  isLoggedIn,(req, res)=> {
     res.render('feed')
 })
 

@@ -149,6 +149,7 @@ body {
 .signup-link {
     margin-top: 20px;
     color: gray;
+    font-size: 2vh;
 }
 
 .signup-link a {
@@ -156,49 +157,10 @@ body {
     text-decoration: none;
 }
 
-.illustration {
-    position: relative;
-    bottom: 0;
+.illustration img{
+    position: fixed;
+    bottom: -5rem;
     left: 0;
     right: 0;
-    height: 30vh; /* Adjust based on how much of the screen you want the ellipses to cover */
+    width: 100vw;
 }
-
-.illustration img {
-    height: 100vh;/* Adjust the size of the ellipses */
-    width: 100vh; /* Maintain aspect ratio */
-    position: absolute;
-}
-
-.illustration img:nth-child(1) {
-    margin-left: -121vh;
-    bottom: -80vh;
-}
-
-.illustration img:nth-child(2) {
-    margin-left: -121vh;
-    bottom: -88vh;
-    width: 150vh;
-}
-
-.illustration img:nth-child(3) {
-    margin-left: -65vh;
-    bottom: -70vh;
-}
-
-.illustration img:nth-child(4) {
-    margin-right: 12vh;
-    bottom: -88vh;
-    width: 150vh;
-}
-
-.illustration img:nth-child(5) {
-    margin-right: 10%;
-    bottom: -50vh;
-}
-
-.ellipse-4 { z-index: -4; }
-.ellipse-5 { z-index: -1; }
-.ellipse-6 { z-index: -2; }
-.ellipse-7 { z-index: -4; }
-.ellipse-8 { z-index: -3; }

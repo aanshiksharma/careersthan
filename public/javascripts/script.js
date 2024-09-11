@@ -22,3 +22,18 @@ function removeSelectStyle(button, index) {
   Array.from(navButtons)[Array.from(navButtons).length - 1].style.color =
     "#31aea5";
 }
+
+
+const messagingPopupButton = document.getElementById('messagingPopupButton');
+
+messagingPopupButton.addEventListener('click', () => {
+  const messagingPopup = document.getElementById('messagingPopup');
+  if(messagingPopup.getAttribute('aria-visible') == 'false') {
+  messagingPopup.style.transform = 'translateY(0)';
+  messagingPopup.setAttribute('aria-visible', 'true');
+}
+else{
+  messagingPopup.style.transform = 'translateY(calc(100% - 3.5rem))';
+  messagingPopup.setAttribute('aria-visible', 'false');
+}
+});
